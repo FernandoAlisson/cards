@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #555;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  height: 460px;
+  margin: 25px;
+  background-color: #FFF;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+}
+
+.card__header {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card__img {
+  min-width: 100%;
+  width: auto;
+  height: 100%;
+}
+
+.card__body {
+  height: 170px;
+  padding: 15px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.card__local {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.card__title {
+  font-size: 32px;
+  margin: 15px 0;
+}
+.card__text {
+  font-size: 12px;
+  width: 250px;
+}
+
+.card__footer {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #000;
+}
+
+.card__footer a {
+  color: #FFF;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+/* Card Color */
+.card-1 .card__local {
+  color: #2740D1;
+}
+
+.card-1 .card__footer{
+  background-color: #2740D1;
+}
+
+.card-2 .card__local {
+  color: #D12761;
+}
+
+.card-2 .card__footer {
+  background-color: #D12761;
+}
+
+.card-3 .card__local {
+  color: #00C702;
+}
+
+.card-3 .card__footer {
+background-color: #00C702;
+}
+
+/* Hover */
+.card:hover {
+  transform: scale3d(1.1, 1.1, 1);
+}
